@@ -17,7 +17,7 @@
     --panel: #99c5c2;
     --subpanel: #64aaa6;
     --highlight: #ebeded;
-    --logo: grayscale(0%) brightness(50%) sepia(100%) hue-rotate(160deg) saturate(200%);
+    --logo: grayscale(0%) brightness(90%) sepia(100%) hue-rotate(130deg) saturate(100%);
     --bannerimg: url('');
     --caveimg: url('');
     --moundimg: url('');
@@ -266,7 +266,7 @@ table, .cave-grid, .mound-grid, table .right_odd, .feature, .col-md-4 div, .col-
     border-radius: 16px !important;
 }
 *:has(.roundedges) .comment img,
-*:has(.roundedges) .lion-image-block, 
+*:has(.roundedges) #about .lion-image-block, 
 *:has(.roundedges) #player img,
 *:has(.roundedges) .member-online, 
 *:has(.roundedges) .member-offline {

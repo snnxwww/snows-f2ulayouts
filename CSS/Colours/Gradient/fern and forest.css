@@ -8,16 +8,16 @@
 */
 
 :root {
-    --bg: #2d5048 url('');
-    --main: #2e574d;
-    --txt: #85c5b3;
-    --navigation: linear-gradient(90deg, #0e362d, #28574d);
-    --header: linear-gradient(90deg, #0e362d, #28574d);
-    --subheader: #2e6055;
-    --panel: #366d60;
-    --subpanel: #0d4135;
-    --highlight: #85c5b3;
-    --logo: grayscale(0%) brightness(70%) sepia(100%) hue-rotate(100deg) saturate(100%);
+    --bg: #416640 url('');
+    --main: #29561a;
+    --txt: #8fc585;
+    --navigation: linear-gradient(90deg, #084210, #27640f);
+    --header: linear-gradient(90deg, #084210, #27640f);
+    --subheader: #316438;
+    --panel: #3e7341;
+    --subpanel: #3e7341;
+    --highlight: #8fc585;
+    --logo: grayscale(0%) brightness(60%) sepia(100%) hue-rotate(60deg) saturate(200%);
     --bannerimg: url('');
     --caveimg: url('');
     --moundimg: url('');
@@ -266,7 +266,7 @@ table, .cave-grid, .mound-grid, table .right_odd, .feature, .col-md-4 div, .col-
     border-radius: 16px !important;
 }
 *:has(.roundedges) .comment img,
-*:has(.roundedges) .lion-image-block, 
+*:has(.roundedges) #about .lion-image-block, 
 *:has(.roundedges) #player img,
 *:has(.roundedges) .member-online, 
 *:has(.roundedges) .member-offline {

@@ -110,12 +110,12 @@ input, select, textarea, .button, .progress-bar, .badge  {
 }
 
 .topbar, .sub_sub_menu {
-    background-color: var(--navigation);
+    background: var(--navigation);
     border: 2px solid var(--txt) !important;
     border-top: none !important
 }
 .navbar, .navbar-toggle{
-    background-color: var(--navigation) !important;
+    background: var(--navigation) !important;
 }
 .breadcrumb, .alert, table .top, table th, table .bottom, table td[colspan='100%'], .contentheader, .panel, .channelSwitcher.active, .channelSwitcher:hover, .sub_menu {
     background: var(--header) !important;
@@ -136,7 +136,7 @@ input, select, textarea, .button, .progress-bar, .badge  {
     color: var(--txt) !important;
 }
 table .left.b, .contentsubheader, .content .footer, .comment, .mb-0, div[role='menu'], .featured-lion {
-    background-color: var(--subheader) !important;
+    background: var(--subheader) !important;
 }
 table {
     border-collapse: separate !important;
@@ -198,7 +198,7 @@ table, .cave-grid, .mound-grid, table .right_odd, .feature, .col-md-4 div, .col-
     border-top-left-radius: 18px !important;
     border-bottom-left-radius: 18px !important;
 }
-@media(max-width: 991px) {
+@media(max-width: 768px) {
     *:has(.roundedges) .topbar {
         border-radius: 0px !important;
     }
@@ -233,6 +233,7 @@ table, .cave-grid, .mound-grid, table .right_odd, .feature, .col-md-4 div, .col-
     border-bottom-left-radius: 16px !important;
     border-bottom-right-radius: 16px !important;
 }
+*:has(.roundedges) .content,
 *:has(.roundedges) .staticbox-layout .maincontent,
 *:has(.roundedges) .trisectionedstaticbox-layout .maincontent,
 *:has(.roundedges) .expander-layout .maincontent,
@@ -261,11 +262,11 @@ table, .cave-grid, .mound-grid, table .right_odd, .feature, .col-md-4 div, .col-
 *:has(.roundedges) .col-sm-6 div,
 *:has(.roundedges) .left:has(a[href*='account-settings']),
 *:has(.roundedges) .panel,
-*:has(.roundedges) table img,
-*:has(.roundedges) .content {    border-radius: 16px !important;
+*:has(.roundedges) table img {
+    border-radius: 16px !important;
 }
 *:has(.roundedges) .comment img,
-*:has(.roundedges) .lion-image-block, 
+*:has(.roundedges) #about .lion-image-block, 
 *:has(.roundedges) #player img,
 *:has(.roundedges) .member-online, 
 *:has(.roundedges) .member-offline {
@@ -307,6 +308,10 @@ table, .cave-grid, .mound-grid, table .right_odd, .feature, .col-md-4 div, .col-
 .content:after {
     content: 'HTML layout by Snow #553411';
     font-size: 12px;
+    position: absolute;
+    margin-top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 .content {
     text-align: center;
@@ -620,7 +625,20 @@ box-shadow: 1px 1px 6px var(--highlight) !important
 *:has(.boxglow) .breadcrumb,
 *:has(.boxglow) .alert,
 *:has(.boxglow) table:not(.inner-table),
-*:has(.boxglow) .content,
+*:has(.boxglow) .basiccard-layout .content,
+*:has(.boxglow) .card-layout .content,
+*:has(.boxglow) .disectionedcard-layout .content,
+*:has(.boxglow) .trisectioned-layout .content,
+*:has(.boxglow) .staticbox-layout .maincontent,
+*:has(.boxglow) .trisectionedstaticbox-layout .maincontent,
+*:has(.boxglow) .expander-layout .maincontent,
+*:has(.boxglow) .leftcontent,
+*:has(.boxglow) .rightcontent,
+*:has(.boxglow) .centercontent,
+*:has(.boxglow) .leftcentercontent,
+*:has(.boxglow) .rightcentercontent,
+*:has(.boxglow) .topcontent,
+*:has(.boxglow) .bottomcontent,
 *:has(.boxglow) .cave-grid,
 *:has(.boxglow) .mound-grid,
 *:has(.boxglow) .dynastylist div,
