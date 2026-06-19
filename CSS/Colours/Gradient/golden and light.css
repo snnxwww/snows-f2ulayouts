@@ -11,11 +11,16 @@
     --bg: #d4ceb4 url('');
     --main: #d3caa9;
     --txt: #ededeb;
-    --header1: #bba158;
-    --header2: #bdab77;
-    --colour: #d5c6a9;
+    --navigation: linear-gradient(90deg, #bba158, #bdab77);
+    --header: linear-gradient(90deg, #bba158, #bdab77);
+    --subheader: #cabb8e;
+    --panel: #d5c6a9;
+    --subpanel: #b59659;
+    --highlight: #ededeb;
     --logo: grayscale(0%) brightness(100%) sepia(100%) hue-rotate(0deg) saturate(100%);
-    --img: url('');
+    --bannerimg: url('');
+    --caveimg: url('');
+    --moundimg: url('');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
@@ -39,23 +44,23 @@ img[src*='logo-full-2.png'] {
     filter: var(--logo);
 }
 img[src*='banner'] {
-    content: var(--img);
+    content: var(--bannerimg);
     height: 60px;
     object-fit: cover;
 }
-
 img[src*='cave'] {
-    content: var(--img);
+    content: var(--caveimg);
     height: 120px;
-    object-fit: cover;
+    object-fit: cover; 
 }
-img[src*='mound'], img[src*='beetleunsorted'] {
-    content: var(--img);
+img[src*='mound'] {
+    content: var(--moundimg);
     height: 80px;
-    object-fit: cover;
+    object-fit: cover; 
 }
+
 .member-online {
-    background: color-mix(var(--txt), #fff) !important;
+    background: var(--txt) !important;
     border-radius: 20px !important;
 }
 .member-online:after {
@@ -65,7 +70,7 @@ img[src*='mound'], img[src*='beetleunsorted'] {
     margin-left: -50px;
 }
 .member-offline {
-    background: color-mix(var(--txt), #000) !important;
+    background: var(--header) !important;
     border-radius: 20px !important;
 }
 .member-offline:after {
@@ -101,24 +106,24 @@ a:hover, input:hover, select:hover, textarea:hover, .button:hover  {
 }
 
 input, select, textarea, .button, .progress-bar, .badge  {
-    background: color-mix(var(--header1), #000 15%) !important;
+    background: color-mix(var(--panel), var(--subheader) 50%) !important;
 }
 
 .topbar, .sub_sub_menu {
-    background: linear-gradient(90deg, color-mix(var(--header1), #000 5%), color-mix(var(--header2), #000 5%));
+    background: var(--navigation);
     border: 2px solid var(--txt) !important;
     border-top: none !important
 }
-.navbar, .navbar-toggle, .breadcrumb, .alert, table .top, table th, table .bottom, table td[colspan='100%'], .contentheader, .channelSwitcher.active, .channelSwitcher:hover, .sub_menu {
-    background: linear-gradient(90deg, var(--header1), var(--header2)) !important;
+.navbar, .navbar-toggle{
+    background: var(--navigation) !important;
+}
+.breadcrumb, .alert, table .top, table th, table .bottom, table td[colspan='100%'], .contentheader, .panel, .channelSwitcher.active, .channelSwitcher:hover, .sub_menu {
+    background: var(--header) !important;
 }
 #chatMessagePinned {
-    background-color: var(--header2) !important;
+    background-color: var(--header) !important;
 }
-.panel {
-    background: var(--header2) !important
-}
-.breadcrumb, .alert, .panel, table:not(.inner-table), .cave-grid, .mound-grid, .feature, .col-md-4 div, .col-sm-4 div, .left:has(a[href*="account-settings"]), #chatMessageContainer, .sub_menu {
+.breadcrumb, .alert, .panel, table:not(.inner-table), .cave-grid, .mound-grid, .feature, .col-md-4 div, .col-sm-4 div, .left:has(a[href*="account-settings"]), #chatMessageContainer {
     border: 2px solid var(--txt) !important;
 }
 .navbar {
@@ -131,12 +136,12 @@ input, select, textarea, .button, .progress-bar, .badge  {
     color: var(--txt) !important;
 }
 table .left.b, .contentsubheader, .content .footer, .comment, .mb-0, div[role='menu'], .featured-lion {
-    background-color: color-mix(var(--header1), var(--colour) 30%) !important
+    background: var(--subheader) !important;
 }
 table {
     border-collapse: separate !important;
 }
-#commentBox, #makeComment input, .sidebar .button, #txtChatContainer input, #label_currentChannel, .featured-lion {
+#commentBox, #makeComment input, .sidebar .button, #txtChatContainer input, #label_currentChannel, .sub_menu, .featured-lion {
     border: 2px solid var(--txt) !important;
 }
 #makeComment input::placeholder {
@@ -156,20 +161,20 @@ table {
     border: none !important
 }
 table, .cave-grid, .mound-grid, table .right_odd, .feature, .col-md-4 div, .col-sm-4 div, .left:has(a[href*='account-settings']), .maincontent, .sidecontent, .leftcontent, .leftcentercontent, .centercontent, .rightcentercontent, .rightcontent, .topcontent, .bottomcontent, #fraChatChannelMenu, #label_currentChannel, .s-chat-message, .progress, #modalClaimList {
-    background-color: var(--colour) !important
+    background-color: var(--panel) !important
 }
 .inner-table .left {
-    background-color: color-mix(var(--colour), var(--header1) 90%)
+    background-color: color-mix(var(--subpanel), var(--txt) 30%)
 }
 .inner-table .right {
-    background-color: color-mix(var(--colour), var(--header1) 50%)
+    background-color: color-mix(var(--subpanel), var(--txt) 20%)
 }
 .s-chat-message, .s-chat-message_timestamp {
     padding-left: 10px !important;
     padding-right: 10px !important
 }
 .s-chat-message.hasContext {
-    background-color: color-mix(var(--colour), var(--header1) 50%) !important
+    background-color: color-mix(var(--subpanel), var(--txt) 20%) !important
 }
 
 
@@ -193,7 +198,7 @@ table, .cave-grid, .mound-grid, table .right_odd, .feature, .col-md-4 div, .col-
     border-top-left-radius: 18px !important;
     border-bottom-left-radius: 18px !important;
 }
-@media(max-width: 991px) {
+@media(max-width: 768px) {
     *:has(.roundedges) .topbar {
         border-radius: 0px !important;
     }
@@ -228,6 +233,7 @@ table, .cave-grid, .mound-grid, table .right_odd, .feature, .col-md-4 div, .col-
     border-bottom-left-radius: 16px !important;
     border-bottom-right-radius: 16px !important;
 }
+*:has(.roundedges) .content,
 *:has(.roundedges) .staticbox-layout .maincontent,
 *:has(.roundedges) .trisectionedstaticbox-layout .maincontent,
 *:has(.roundedges) .expander-layout .maincontent,
@@ -256,11 +262,11 @@ table, .cave-grid, .mound-grid, table .right_odd, .feature, .col-md-4 div, .col-
 *:has(.roundedges) .col-sm-6 div,
 *:has(.roundedges) .left:has(a[href*='account-settings']),
 *:has(.roundedges) .panel,
-*:has(.roundedges) table img{
+*:has(.roundedges) table img {
     border-radius: 16px !important;
 }
 *:has(.roundedges) .comment img,
-*:has(.roundedges) #about img, 
+*:has(.roundedges) .lion-image-block, 
 *:has(.roundedges) #player img,
 *:has(.roundedges) .member-online, 
 *:has(.roundedges) .member-offline {
@@ -302,6 +308,10 @@ table, .cave-grid, .mound-grid, table .right_odd, .feature, .col-md-4 div, .col-
 .content:after {
     content: 'HTML layout by Snow #553411';
     font-size: 12px;
+    position: absolute;
+    margin-top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 .content {
     text-align: center;
@@ -604,4 +614,35 @@ table, .cave-grid, .mound-grid, table .right_odd, .feature, .col-md-4 div, .col-
 }
 .quadsectionedexpander-layout .leftcontent:hover, .quadsectionedexpander-layout .leftcentercontent:hover, .quadsectionedexpander-layout .rightcentercontent:hover, .quadsectionedexpander-layout .rightcontent:hover {
     flex: 3;
+}
+
+
+*:has(.boxglow) .main, 
+*:has(.boxglow) .topbar {
+box-shadow: 1px 1px 6px var(--highlight) !important
+}
+*:has(.boxglow) .panel, 
+*:has(.boxglow) .breadcrumb,
+*:has(.boxglow) .alert,
+*:has(.boxglow) table:not(.inner-table),
+*:has(.boxglow) .basiccard-layout .content,
+*:has(.boxglow) .card-layout .content,
+*:has(.boxglow) .disectionedcard-layout .content,
+*:has(.boxglow) .trisectioned-layout .content,
+*:has(.boxglow) .staticbox-layout .maincontent,
+*:has(.boxglow) .trisectionedstaticbox-layout .maincontent,
+*:has(.boxglow) .expander-layout .maincontent,
+*:has(.boxglow) .leftcontent,
+*:has(.boxglow) .rightcontent,
+*:has(.boxglow) .centercontent,
+*:has(.boxglow) .leftcentercontent,
+*:has(.boxglow) .rightcentercontent,
+*:has(.boxglow) .topcontent,
+*:has(.boxglow) .bottomcontent,
+*:has(.boxglow) .cave-grid,
+*:has(.boxglow) .mound-grid,
+*:has(.boxglow) .dynastylist div,
+*:has(.boxglow) .col-sm-4 div,
+*:has(.boxglow) .left:has(a[href='/account-settings.php']){
+box-shadow: 1px 1px 4px var(--highlight) !important
 }
