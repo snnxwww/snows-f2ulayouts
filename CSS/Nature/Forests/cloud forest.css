@@ -18,9 +18,9 @@
     --subpanel: #1a240c;
     --highlight: #dbdfda;
     --logo: grayscale(20%) brightness(50%) sepia(100%) saturate(100%) hue-rotate(30deg);
-    --bannerimg: url('');
-    --caveimg: url('');
-    --moundimg: url('');
+    --bannerimg: url('https://static.lioden.com/images/dynamic/backgrounds/legacy_marshland.png');
+    --caveimg: url('https://static.lioden.com/images/dynamic/backgrounds/TropicalForest_WetDay.png');
+    --moundimg: url('https://static.lioden.com/images/items/Beetles/NEMESIS_neotroglabrasiliensis.png');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
@@ -47,6 +47,27 @@ img[src*='banner'] {
     content: var(--bannerimg);
     height: 60px;
     object-fit: cover;
+}
+.cave-grid:has(img[src*='unsortedlions']):after {
+    content: 'UNSORTED';
+    position: absolute;
+    font-size: 18px;
+    top: 10px;
+    margin-left: -120px;
+}
+.cave-grid:has(img[src*='nesting']):after {
+    content: 'NESTING';
+    position: absolute;
+    font-size: 18px;
+    top: 10px;
+    margin-left: -150px;
+}
+.cave-grid:has(img[src*='prideoverview']):after {
+    content: 'PRIDE OVERVIEW';
+    position: absolute;
+    font-size: 18px;
+    top: 10px;
+    margin-left: -150px;
 }
 img[src*='cave'] {
     content: var(--caveimg);
@@ -266,7 +287,7 @@ table, .cave-grid, .mound-grid, table .right_odd, .feature, .col-md-4 div, .col-
     border-radius: 16px !important;
 }
 *:has(.roundedges) .comment img,
-*:has(.roundedges) .lion-image-block, 
+*:has(.roundedges) #about .lion-image-block, 
 *:has(.roundedges) #player img,
 *:has(.roundedges) .member-online, 
 *:has(.roundedges) .member-offline {
