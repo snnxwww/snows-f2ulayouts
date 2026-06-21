@@ -8,19 +8,19 @@
 */
 
 :root {
-    --bg: #1b2314 url('https://snnxwww.github.io/snows-f2ulayouts/CSS/Nature/Forests/Images/lush%20skylight.jpg') center / cover no-repeat fixed;
-    --main: #141a1080;
-    --txt: #cee3cb;
-    --navigation: #243121;
-    --header: #354232;
-    --subheader: #43543f;
-    --panel: #576d5b;
-    --subpanel: #506754;
-    --highlight: #cee3cb;
-    --logo: grayscale(20%) brightness(40%) sepia(100%) saturate(250%) hue-rotate(45deg);
-    --bannerimg: url('https://static.lioden.com/images/dynamic/backgrounds/haloween_01.png');
-    --caveimg: url('https://static.lioden.com/images/dynamic/backgrounds/tribute.png');
-    --moundimg: url('https://static.lioden.com/images/items/Beetles/EVENTBEETLE_locustiamigratoria.png');
+    --bg: #d2b9be url('https://snnxwww.github.io/snows-f2ulayouts/CSS/Nature/Plants/Images/mixed%20succulents.jpg') center / cover no-repeat fixed;
+    --main: #ea8b5f80;
+    --txt: #e5e6f0;
+    --navigation: #5c6170;
+    --header: #567168;
+    --subheader: #7f8967;
+    --panel: #a39a96;
+    --subpanel: #324942;
+    --highlight: #e5e6f0;
+    --logo: grayscale(20%) brightness(90%) sepia(100%) saturate(90%) hue-rotate(-30deg);
+    --bannerimg: url('https://static.lioden.com/images/dynamic/backgrounds/Cape_floral_bg.png');
+    --caveimg: url('https://static.lioden.com/images/dynamic/backgrounds/Flowering_Candelabra_Lilies.png');
+    --moundimg: url('https://static.lioden.com/images/items/Beetles/EVENTBEETLE_harmoniaaxyridis.png');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');

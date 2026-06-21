@@ -8,19 +8,19 @@
 */
 
 :root {
-    --bg: #1b2314 url('https://snnxwww.github.io/snows-f2ulayouts/CSS/Nature/Forests/Images/lush%20skylight.jpg') center / cover no-repeat fixed;
-    --main: #141a1080;
-    --txt: #cee3cb;
-    --navigation: #243121;
-    --header: #354232;
-    --subheader: #43543f;
-    --panel: #576d5b;
-    --subpanel: #506754;
-    --highlight: #cee3cb;
-    --logo: grayscale(20%) brightness(40%) sepia(100%) saturate(250%) hue-rotate(45deg);
-    --bannerimg: url('https://static.lioden.com/images/dynamic/backgrounds/haloween_01.png');
-    --caveimg: url('https://static.lioden.com/images/dynamic/backgrounds/tribute.png');
-    --moundimg: url('https://static.lioden.com/images/items/Beetles/EVENTBEETLE_locustiamigratoria.png');
+    --bg: #ffffff url('https://snnxwww.github.io/snows-f2ulayouts/CSS/Nature/Plants/Images/morning%20dew.jpg') center / cover no-repeat fixed;
+    --main: #c2aea280;
+    --txt: #ffffff;
+    --navigation: #678060;
+    --header: #859780;
+    --subheader: #93a38f;
+    --panel: #c7bf96;
+    --subpanel: #859780;
+    --highlight: #ffffff;
+    --logo: grayscale(20%) brightness(80%) sepia(100%) saturate(100%) hue-rotate(30deg);
+    --bannerimg: url('https://static.lioden.com/images/dynamic/backgrounds/lioden_celtic.png');
+    --caveimg: url('https://static.lioden.com/images/dynamic/backgrounds/BF_stag1.png');
+    --moundimg: url('https://static.lioden.com/images/items/Beetles/EVENTBEETLE_luciolalusitanica.png');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');

@@ -8,7 +8,7 @@
 */
 
 :root {
-    --bg: #f6f6ff url('https://snnxwww.github.io/snows-f2ulayouts/CSS/Nature/Forests/Images/boreal%20sunset.jpg') center / cover no-repeat fixed;
+    --bg: #ded1af url('https://snnxwww.github.io/snows-f2ulayouts/CSS/Nature/Forests/Images/boreal%20sunset.jpg') center / cover no-repeat fixed;
     --main: #d1d2f080; 
     --txt: #eaefef;
     --navigation: #154046;
@@ -74,7 +74,7 @@ img[src*='cave'] {
     height: 120px;
     object-fit: cover; 
 }
-img[src*='mound'] {
+img[src*='beetleunsorted'], img[src*='mound'] {
     content: var(--moundimg);
     height: 80px;
     object-fit: cover; 

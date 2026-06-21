@@ -8,19 +8,19 @@
 */
 
 :root {
-    --bg: #1b2314 url('https://snnxwww.github.io/snows-f2ulayouts/CSS/Nature/Forests/Images/lush%20skylight.jpg') center / cover no-repeat fixed;
-    --main: #141a1080;
-    --txt: #cee3cb;
-    --navigation: #243121;
-    --header: #354232;
-    --subheader: #43543f;
-    --panel: #576d5b;
-    --subpanel: #506754;
-    --highlight: #cee3cb;
-    --logo: grayscale(20%) brightness(40%) sepia(100%) saturate(250%) hue-rotate(45deg);
-    --bannerimg: url('https://static.lioden.com/images/dynamic/backgrounds/haloween_01.png');
-    --caveimg: url('https://static.lioden.com/images/dynamic/backgrounds/tribute.png');
-    --moundimg: url('https://static.lioden.com/images/items/Beetles/EVENTBEETLE_locustiamigratoria.png');
+    --bg: #121317 url('https://snnxwww.github.io/snows-f2ulayouts/CSS/Nature/Plants/Images/fern%20fronds.jpg') center / cover no-repeat fixed;
+    --main: #6b915580;
+    --txt: #edf0f2;
+    --navigation: #253c33;
+    --header: #3a5349;
+    --subheader: #34463f;
+    --panel: #637c72;
+    --subpanel: #1b3329;
+    --highlight: #edf0f2;
+    --logo: grayscale(20%) brightness(50%) sepia(100%) saturate(100%) hue-rotate(70deg);
+    --bannerimg: url('https://static.lioden.com/images/dynamic/backgrounds/lakechivero.png');
+    --caveimg: url('https://static.lioden.com/images/dynamic/backgrounds/zaxkingfishergrove.png');
+    --moundimg: url('https://static.lioden.com/images/items/Beetles/NEMESIS_gryllotarpaafricana.png');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');

@@ -8,19 +8,19 @@
 */
 
 :root {
-    --bg: #0e0b02 url('https://snnxwww.github.io/snows-f2ulayouts/CSS/Nature/Forests/Images/forest%20canopy.jpg') center / cover no-repeat fixed;
-    --main: #f9e8ba80; 
-    --txt: #efefea;
-    --navigation: #494526;
-    --header: #625e3b;
-    --subheader: #766e56;
-    --panel: #889073;
-    --subpanel: #49482d;
-    --highlight: #efefea;
-    --logo: grayscale(20%) brightness(60%) sepia(100%) saturate(100%) hue-rotate(0deg);
-    --bannerimg: url('https://static.lioden.com/images/dynamic/backgrounds/BF_stag1.png');
-    --caveimg: url('https://static.lioden.com/images/dynamic/backgrounds/prowlingblackpanther.png');
-    --moundimg: url('https://static.lioden.com/images/items/Beetles/NEMESIS_gasteracanthaversicolor.png');
+    --bg: #090701 url('https://snnxwww.github.io/snows-f2ulayouts/CSS/Nature/Plants/Images/cedar%20branch.jpg') center / cover no-repeat fixed;
+    --main: #b6af6880;
+    --txt: #ffffff;
+    --navigation: #616740;
+    --header: #737953;
+    --subheader: #636843;
+    --panel: #a2a575;
+    --subpanel: #575d34;
+    --highlight: #ffffff;
+    --logo: grayscale(20%) brightness(70%) sepia(100%) saturate(80%) hue-rotate(30deg);
+    --bannerimg: url('https://static.lioden.com/images/dynamic/backgrounds/TemperateSavannah_WetDay.png');
+    --caveimg: url('https://static.lioden.com/images/dynamic/backgrounds/chinese_dragon.png');
+    --moundimg: url('https://static.lioden.com/images/items/Beetles/EVENTBEETLE_lamprimaaurata.png');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
@@ -74,7 +74,7 @@ img[src*='cave'] {
     height: 120px;
     object-fit: cover; 
 }
-img[src*='mound'] {
+img[src*='beetleunsorted'], img[src*='mound'] {
     content: var(--moundimg);
     height: 80px;
     object-fit: cover; 

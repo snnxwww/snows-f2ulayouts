@@ -8,19 +8,19 @@
 */
 
 :root {
-    --bg: #1b2314 url('https://snnxwww.github.io/snows-f2ulayouts/CSS/Nature/Forests/Images/lush%20skylight.jpg') center / cover no-repeat fixed;
-    --main: #141a1080;
-    --txt: #cee3cb;
-    --navigation: #243121;
-    --header: #354232;
-    --subheader: #43543f;
-    --panel: #576d5b;
-    --subpanel: #506754;
-    --highlight: #cee3cb;
-    --logo: grayscale(20%) brightness(40%) sepia(100%) saturate(250%) hue-rotate(45deg);
-    --bannerimg: url('https://static.lioden.com/images/dynamic/backgrounds/haloween_01.png');
-    --caveimg: url('https://static.lioden.com/images/dynamic/backgrounds/tribute.png');
-    --moundimg: url('https://static.lioden.com/images/items/Beetles/EVENTBEETLE_locustiamigratoria.png');
+    --bg: #1d4f44 url('https://snnxwww.github.io/snows-f2ulayouts/CSS/Nature/Plants/Images/green%20hedges.jpg') center / cover no-repeat fixed;
+    --main: #9db1a280;
+    --txt: #e6f0e3;
+    --navigation: #3c4e44;
+    --header: #4f6057;
+    --subheader: #67766e;
+    --panel: #9ca98f;
+    --subpanel: #2d3f36;
+    --highlight: #e6f0e3;
+    --logo: grayscale(20%) brightness(70%) sepia(100%) saturate(40%) hue-rotate(50deg);
+    --bannerimg: url('https://static.lioden.com/images/dynamic/backgrounds/Kongou_Falls.png');
+    --caveimg: url('https://static.lioden.com/images/dynamic/backgrounds/RuacanaFalls.png');
+    --moundimg: url('https://static.lioden.com/images/items/Beetles/EVENTBEETLE_eudicellagralli.png');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
